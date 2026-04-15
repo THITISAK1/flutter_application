@@ -1,23 +1,15 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
-import '../models/tutorial_data.dart';
+import '../models/tutorial_model.dart';
 
 class FirestoreService {
-  final _tutorial = FirebaseFirestore.instance.collection('tutorial');
+  final collection =
+      FirebaseFirestore.instance.collection('tutorials');
 
-  // ดึงทั้งหมด
-  Stream<List<TutorialData>> getTutorials() {
-    return _tutorial.snapshots().map((snapshot) {
+  Stream<List<Tutorial>> getTutorials() {
+    return collection.snapshots().map((snapshot) {
       return snapshot.docs.map((doc) {
-        return TutorialData.fromMap(doc.id, doc.data());
+        return Tutorial.fromMap(doc.id, doc.data());
       }).toList();
-    });
-  }
-
-  // เพิ่ม tutorial
-  Future<void> addTutorial(String title, String content) {
-    return _tutorial.add({
-      'title': title,
-      'content': content,
     });
   }
 }

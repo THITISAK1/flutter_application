@@ -18,14 +18,18 @@ class ReviewScreen extends StatelessWidget {
         backgroundColor: Colors.black,
         title: Text(
           "Review",
-          style: TextStyle(fontWeight: FontWeight.bold,color: Colors.white,fontSize: 25),
-        ),centerTitle: true,
+          style: TextStyle(
+            fontWeight: FontWeight.bold,
+            color: Colors.white,
+            fontSize: 25,
+          ),
+        ),
+        centerTitle: true,
       ),
 
       body: StreamBuilder<List<Review>>(
         stream: service.getReviews(),
         builder: (context, snapshot) {
-
           if (!snapshot.hasData) {
             return Center(child: CircularProgressIndicator());
           }
@@ -40,7 +44,6 @@ class ReviewScreen extends StatelessWidget {
               childAspectRatio: 0.75,
             ),
             itemBuilder: (context, index) {
-
               final review = reviews[index];
 
               return GestureDetector(
@@ -48,8 +51,7 @@ class ReviewScreen extends StatelessWidget {
                   Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (_) =>
-                          ReviewDetailScreen(review: review),
+                      builder: (_) => ReviewDetailScreen(review: review),
                     ),
                   );
                 },
@@ -65,13 +67,21 @@ class ReviewScreen extends StatelessWidget {
                     borderRadius: BorderRadius.circular(16),
                     child: Column(
                       children: [
-
                         /// 🔥 IMAGE
                         Expanded(
                           child: Image.network(
                             review.image,
                             fit: BoxFit.cover,
                             width: double.infinity,
+                            errorBuilder: (context, error, stackTrace) {
+                              return Center(
+                                child: Icon(
+                                  Icons.broken_image,
+                                  size: 50,
+                                  color: Colors.white,
+                                ),
+                              );
+                            },
                           ),
                         ),
 
@@ -104,9 +114,7 @@ class ReviewScreen extends StatelessWidget {
         onPressed: () {
           Navigator.push(
             context,
-            MaterialPageRoute(
-              builder: (_) => ReviewCreateScreen(),
-            ),
+            MaterialPageRoute(builder: (_) => ReviewCreateScreen()),
           );
         },
         child: Icon(Icons.add),

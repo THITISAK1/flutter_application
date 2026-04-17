@@ -95,6 +95,13 @@ class _ReviewDetailScreenState extends State<ReviewDetailScreen> {
               height: 250,
               width: double.infinity,
               fit: BoxFit.cover,
+              errorBuilder: (context, error, stackTrace) {
+                return Container(
+                  height: 250,
+                  color: Colors.grey[300],
+                  child: Center(child: Icon(Icons.broken_image, size: 50)),
+                );
+              },
             ),
           ),
 

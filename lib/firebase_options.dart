@@ -41,48 +41,49 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyCz4i9nSZHRwgBBbuZTaP3U47UVXzeWJWI',
-    appId: '1:806797846218:web:1fd03731d2cc77074f3633',
-    messagingSenderId: '806797846218',
-    projectId: 'badmintonapp-8de08',
-    authDomain: 'badmintonapp-8de08.firebaseapp.com',
-    storageBucket: 'badmintonapp-8de08.firebasestorage.app',
-    measurementId: 'G-KQHCXP9LLL',
+    apiKey: 'AIzaSyBHkj57iaSEEVFJ-5DPzDNQcsVa20wvOlY',
+    appId: '1:681813772960:web:177f93d022ef3456cc57c5',
+    messagingSenderId: '681813772960',
+    projectId: 'badmintonapp-5502a',
+    authDomain: 'badmintonapp-5502a.firebaseapp.com',
+    storageBucket: 'badmintonapp-5502a.firebasestorage.app',
+    measurementId: 'G-15MDRQHT22',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyD0WqZvlR88JHId7sisKQZiPCznJX4JrXc',
-    appId: '1:806797846218:android:c7c2dcd926638aa94f3633',
-    messagingSenderId: '806797846218',
-    projectId: 'badmintonapp-8de08',
-    storageBucket: 'badmintonapp-8de08.firebasestorage.app',
+    apiKey: 'AIzaSyDUNt5nECaIBoAvhhJkKSECybSEOgKo6_4',
+    appId: '1:681813772960:android:57bfc0c2e491b5ddcc57c5',
+    messagingSenderId: '681813772960',
+    projectId: 'badmintonapp-5502a',
+    storageBucket: 'badmintonapp-5502a.firebasestorage.app',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyC1n49NRDO9CCwITEOO45IOgAyiy00qOHE',
-    appId: '1:806797846218:ios:6b4d3fcf668a9b0c4f3633',
-    messagingSenderId: '806797846218',
-    projectId: 'badmintonapp-8de08',
-    storageBucket: 'badmintonapp-8de08.firebasestorage.app',
+    apiKey: 'AIzaSyA7KwmpU0Ef6Y16kI-K4PubWHaTB9X5Mh8',
+    appId: '1:681813772960:ios:c7d55c20cea1ee26cc57c5',
+    messagingSenderId: '681813772960',
+    projectId: 'badmintonapp-5502a',
+    storageBucket: 'badmintonapp-5502a.firebasestorage.app',
     iosBundleId: 'com.example.flutterApplication',
   );
 
   static const FirebaseOptions macos = FirebaseOptions(
-    apiKey: 'AIzaSyC1n49NRDO9CCwITEOO45IOgAyiy00qOHE',
-    appId: '1:806797846218:ios:6b4d3fcf668a9b0c4f3633',
-    messagingSenderId: '806797846218',
-    projectId: 'badmintonapp-8de08',
-    storageBucket: 'badmintonapp-8de08.firebasestorage.app',
+    apiKey: 'AIzaSyA7KwmpU0Ef6Y16kI-K4PubWHaTB9X5Mh8',
+    appId: '1:681813772960:ios:c7d55c20cea1ee26cc57c5',
+    messagingSenderId: '681813772960',
+    projectId: 'badmintonapp-5502a',
+    storageBucket: 'badmintonapp-5502a.firebasestorage.app',
     iosBundleId: 'com.example.flutterApplication',
   );
 
   static const FirebaseOptions windows = FirebaseOptions(
-    apiKey: 'AIzaSyCz4i9nSZHRwgBBbuZTaP3U47UVXzeWJWI',
-    appId: '1:806797846218:web:fd6e272a32f458c84f3633',
-    messagingSenderId: '806797846218',
-    projectId: 'badmintonapp-8de08',
-    authDomain: 'badmintonapp-8de08.firebaseapp.com',
-    storageBucket: 'badmintonapp-8de08.firebasestorage.app',
-    measurementId: 'G-SX6J38TC4K',
+    apiKey: 'AIzaSyBHkj57iaSEEVFJ-5DPzDNQcsVa20wvOlY',
+    appId: '1:681813772960:web:33ea84e0813d0512cc57c5',
+    messagingSenderId: '681813772960',
+    projectId: 'badmintonapp-5502a',
+    authDomain: 'badmintonapp-5502a.firebaseapp.com',
+    storageBucket: 'badmintonapp-5502a.firebasestorage.app',
+    measurementId: 'G-9M9845M2NW',
   );
+
 }
